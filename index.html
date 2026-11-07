@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<!-- Developed by Muhammad Younus — Web Developer | Portfolio: https://younasahmad782.github.io/portfolio/ -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مطعم الذواقة | اكتشف مذاق التميز — Althawaqa Restaurant</title>
+<meta name="description" content="مطعم الذواقة — مطعم عربي أصيل في الرياض. أطباق تقليدية ومشاوي وأرز، أجواء راقية، وطلب عبر واتساب. Althawaqa Restaurant in Riyadh — traditional food, grills, rice dishes and more. Order on WhatsApp.">
+<meta name="keywords" content="مطعم, الرياض, مندي, كبسة, مشاوي, مطعم عربي, restaurant Riyadh, Saudi restaurant, mandi, kabsa">
+<meta name="author" content="Muhammad Younus">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مطعم الذواقة | اكتشف مذاق التميز">
+<meta property="og:description" content="أطباق تقليدية ومشاوي وأرز في أجواء راقية — اطلب الآن عبر واتساب.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="theme-color" content="#16382a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2316382a'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23c9a227' font-family='serif'%3E%D8%B0%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Althawaqa Restaurant — مطعم الذواقة",
+  "description": "Traditional Saudi and Arabic restaurant in Riyadh. Mandi, kabsa, grills, rice dishes, desserts and beverages.",
+  "servesCuisine": ["Saudi", "Arabic", "Middle Eastern"],
+  "priceRange": "SAR 10 - SAR 120",
+  "address": { "@type": "PostalAddress", "streetAddress": "King Fahd Road", "addressLocality": "Riyadh", "addressCountry": "SA" },
+  "telephone": "+92-345-7305226"
+}
+</script>
+<style>
+/* ============================================================
+   ALTHAWAQA — Premium Bilingual Restaurant Template
+   Customise everything in the CONFIG object at the bottom
+   of this file (colours, name, phone, menu, offers, gallery).
+   ============================================================ */
+:root{
+  --green:#16382a; --green-dark:#0e2a1f; --green-soft:#1e4d38;
+  --gold:#c9a227; --gold-light:#e6c65c; --gold-soft:#f5eeda;
+  --cream:#faf6ee; --cream-dark:#f1e9d8;
+  --charcoal:#23272b; --muted:#6b7280; --line:#e7ddc8;
+  --white:#ffffff; --shadow:0 10px 30px rgba(22,56,42,.12);
+  --shadow-lg:0 24px 60px rgba(22,56,42,.18);
+  --radius:18px; --radius-sm:12px;
+  --font-head-en:'Playfair Display',Georgia,serif;
+  --font-body-en:'Poppins',system-ui,sans-serif;
+  --font-head-ar:'Cairo',sans-serif;
+  --font-body-ar:'Tajawal','Cairo',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body-ar);background:var(--cream);color:var(--charcoal);line-height:1.75;overflow-x:hidden}
+html[lang="en"] body{font-family:var(--font-body-en);line-height:1.65}
+h1,h2,h3,h4{font-family:var(--font-head-ar);line-height:1.35;color:var(--green)}
+html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3,html[lang="en"] h4{font-family:var(--font-head-en);line-height:1.25}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+::selection{background:var(--gold);color:#fff}
+.container{max-width:1200px;margin-inline:auto;padding-inline:20px}
+section{scroll-margin-top:90px}
+.section{padding:96px 0}
+.section.alt{background:var(--white)}
+.section-head{text-align:center;max-width:720px;margin:0 auto 54px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-weight:700;letter-spacing:.5px;font-size:.95rem;margin-bottom:12px}
+.eyebrow::before,.eyebrow::after{content:"";width:34px;height:2px;background:var(--gold);border-radius:2px}
+.section-head h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:12px}
+.section-head p{color:var(--muted);font-size:1.05rem}
+.gold-line{width:70px;height:3px;background:var(--gold);border-radius:3px;margin:18px auto 0}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 30px;border-radius:50px;font-weight:700;font-size:1rem;transition:transform .25s,box-shadow .25s,background .25s,color .25s;white-space:nowrap}
+.btn svg{width:19px;height:19px;flex:none}
+html[dir="rtl"] .btn svg{transform:scaleX(-1)} /* directional arrows point the reading way in RTL */
+.btn-gold{background:linear-gradient(135deg,var(--gold),#b8912a);color:#fff;box-shadow:0 10px 24px rgba(201,162,39,.38)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(201,162,39,.45)}
+.btn-outline{border:2px solid rgba(255,255,255,.75);color:#fff}
+.btn-outline:hover{background:#fff;color:var(--green);transform:translateY(-3px)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-soft);transform:translateY(-3px);box-shadow:var(--shadow)}
+.btn-light{background:#fff;color:var(--green);border:1.5px solid var(--line)}
+.btn-light:hover{border-color:var(--gold);transform:translateY(-2px)}
+.btn-sm{padding:10px 22px;font-size:.92rem}
+
+/* ---------- Header ---------- */
+.site-header{position:fixed;inset-inline:0;top:0;z-index:100;transition:background .3s,box-shadow .3s,padding .3s}
+.site-header .header-inner{display:flex;align-items:center;gap:18px;padding:16px 0;transition:padding .3s}
+.site-header.transparent{background:linear-gradient(180deg,rgba(10,25,18,.72),rgba(10,25,18,0));color:#fff}
+.site-header.transparent h1,.site-header.transparent .logo-name{color:#fff}
+.site-header.transparent .nav-links a{color:rgba(255,255,255,.92)}
+.site-header.scrolled{background:rgba(250,246,238,.97);backdrop-filter:blur(10px);box-shadow:0 6px 24px rgba(22,56,42,.12);color:var(--charcoal)}
+.site-header.scrolled .header-inner{padding:10px 0}
+.logo{display:flex;align-items:center;gap:12px;flex:none}
+.logo-mark{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green-soft));border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-family:var(--font-head-ar);font-size:1.6rem;font-weight:800;line-height:1}
+html[lang="en"] .logo-mark{font-family:var(--font-head-en)}
+.logo-name{font-size:1.35rem;font-weight:800;line-height:1.2}
+.logo-tag{display:block;font-size:.72rem;font-weight:500;letter-spacing:2px;color:var(--gold);text-transform:uppercase}
+.nav-links{display:flex;gap:28px;margin-inline-start:auto}
+.nav-links a{font-weight:600;font-size:.98rem;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;bottom:0;inset-inline-start:0;width:0;height:2px;background:var(--gold);border-radius:2px;transition:width .3s}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.header-actions{display:flex;align-items:center;gap:12px;margin-inline-start:6px}
+.lang-toggle{display:flex;background:rgba(201,162,39,.16);border:1.5px solid var(--gold);border-radius:50px;overflow:hidden;flex:none}
+.lang-toggle button{padding:8px 14px;font-weight:700;font-size:.88rem;color:var(--gold);transition:background .25s,color .25s}
+.site-header.transparent .lang-toggle button{color:#fff}
+.lang-toggle button.active{background:var(--gold);color:#fff}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:10px;z-index:130}
+.hamburger span{width:26px;height:2.5px;background:currentColor;border-radius:3px;transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+.mobile-nav{position:fixed;top:0;bottom:0;inset-inline-end:0;width:min(320px,85vw);background:var(--green-dark);color:#fff;z-index:120;padding:96px 28px 28px;transform:translateX(105%);visibility:hidden;transition:transform .4s ease,visibility .4s;display:flex;flex-direction:column;gap:6px;box-shadow:-10px 0 40px rgba(0,0,0,.3)}
+html[dir="rtl"] .mobile-nav{transform:translateX(-105%)}
+.mobile-nav.open{transform:translateX(0)!important;visibility:visible}
+.mobile-nav a{padding:13px 6px;font-size:1.15rem;font-weight:700;border-bottom:1px solid rgba(255,255,255,.12)}
+.mobile-nav .btn{margin-top:20px}
+.nav-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:110;opacity:0;pointer-events:none;transition:opacity .3s}
+.nav-overlay.show{opacity:1;pointer-events:auto}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:kenburns 24s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.12)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,26,18,.62) 0%,rgba(14,42,31,.78) 55%,rgba(14,42,31,.92) 100%)}
+.hero-content{position:relative;z-index:2;max-width:860px;padding:150px 20px 90px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,162,39,.18);border:1px solid rgba(230,198,92,.55);color:var(--gold-light);padding:8px 18px;border-radius:50px;font-weight:700;font-size:.92rem;margin-bottom:24px}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.4rem);color:#fff;margin-bottom:18px;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero h1 .gold{color:var(--gold-light)}
+.hero p{font-size:clamp(1.05rem,2vw,1.3rem);color:rgba(255,255,255,.88);max-width:640px;margin:0 auto 34px}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-info{position:relative;z-index:2;display:flex;gap:0;max-width:860px;margin:-34px auto 0;background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--radius);overflow:hidden}
+.hero-info>div{flex:1;padding:20px 12px;text-align:center}
+.hero-info>div+div{border-inline-start:1px solid var(--line)}
+.hero-info .ic{font-size:1.5rem;color:var(--gold);margin-bottom:4px}
+.hero-info b{display:block;font-size:1.02rem;color:var(--green)}
+.hero-info span{font-size:.85rem;color:var(--muted)}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-media{position:relative}
+.about-media .img-main{border-radius:var(--radius);box-shadow:var(--shadow-lg);width:100%;height:480px;object-fit:cover}
+.about-media .img-small{position:absolute;bottom:-34px;inset-inline-start:-12px;width:220px;height:170px;object-fit:cover;border-radius:var(--radius-sm);border:6px solid #fff;box-shadow:var(--shadow-lg)}
+.about-media .exp-badge{position:absolute;top:22px;inset-inline-end:-8px;background:var(--gold);color:#fff;border-radius:var(--radius-sm);padding:14px 20px;text-align:center;box-shadow:var(--shadow)}
+.about-media .exp-badge b{display:block;font-size:1.7rem;line-height:1}
+.about-media .exp-badge span{font-size:.82rem}
+.about-text .eyebrow::after{display:none}
+.about-text h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin-bottom:16px}
+.about-text p{color:var(--muted);margin-bottom:14px}
+.about-points{display:grid;gap:12px;margin:22px 0 28px}
+.about-points li{display:flex;gap:12px;align-items:flex-start;font-weight:600}
+.about-points .tick{flex:none;width:26px;height:26px;border-radius:50%;background:var(--gold-soft);color:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:800;margin-top:2px}
+
+/* ---------- Menu ---------- */
+.filter-bar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:40px}
+.filter-btn{padding:11px 22px;border-radius:50px;border:1.5px solid var(--line);background:#fff;font-weight:700;font-size:.95rem;color:var(--charcoal);transition:all .25s}
+.filter-btn:hover{border-color:var(--gold);color:var(--gold)}
+.filter-btn.active{background:var(--green);border-color:var(--green);color:#fff;box-shadow:var(--shadow)}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:26px}
+.menu-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column;animation:cardIn .45s ease both}
+@keyframes cardIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.menu-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
+.menu-img{position:relative;height:205px;overflow:hidden}
+.menu-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.menu-card:hover .menu-img img{transform:scale(1.08)}
+.badge{position:absolute;top:12px;padding:5px 12px;border-radius:50px;font-size:.78rem;font-weight:700;color:#fff}
+.badge-popular{inset-inline-start:12px;background:var(--gold)}
+.badge-sample{inset-inline-end:12px;background:rgba(35,39,43,.72)}
+.menu-body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.menu-body h3{font-size:1.22rem;margin-bottom:6px}
+.menu-body p{color:var(--muted);font-size:.94rem;flex:1;margin-bottom:16px}
+.menu-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.price{font-size:1.3rem;font-weight:800;color:var(--green)}
+.price small{font-size:.8rem;font-weight:600;color:var(--muted)}
+
+/* ---------- Offers ---------- */
+.offers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.offer-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.offer-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
+.offer-card.featured{outline:3px solid var(--gold);outline-offset:-3px}
+.offer-img{position:relative;height:210px;overflow:hidden}
+.offer-img img{width:100%;height:100%;object-fit:cover}
+.offer-tag{position:absolute;top:14px;inset-inline-start:14px;background:#c0392b;color:#fff;font-weight:800;padding:7px 15px;border-radius:50px;font-size:.95rem;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.offer-body{padding:24px;display:flex;flex-direction:column;flex:1}
+.offer-body h3{font-size:1.35rem;margin-bottom:8px}
+.offer-body p{color:var(--muted);font-size:.95rem;flex:1;margin-bottom:18px}
+.offer-price{display:flex;align-items:baseline;gap:10px;margin-bottom:18px}
+.offer-price .now{font-size:1.6rem;font-weight:800;color:var(--green)}
+.offer-price .was{color:var(--muted);text-decoration:line-through}
+
+/* ---------- Why choose us ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 24px;text-align:center;transition:transform .3s,box-shadow .3s,border-color .3s}
+.why-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
+.why-icon{width:74px;height:74px;margin:0 auto 18px;border-radius:50%;background:var(--gold-soft);color:var(--gold);display:flex;align-items:center;justify-content:center;transition:background .3s,color .3s}
+.why-icon svg{width:34px;height:34px}
+.why-card:hover .why-icon{background:var(--gold);color:#fff}
+.why-card h3{font-size:1.18rem;margin-bottom:8px}
+.why-card p{color:var(--muted);font-size:.93rem}
+
+/* ---------- Gallery ---------- */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:16px}
+.gallery-item{position:relative;border-radius:var(--radius-sm);overflow:hidden;cursor:pointer}
+.gallery-item:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gallery-item:nth-child(6){grid-column:span 2}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gallery-item:hover img{transform:scale(1.09)}
+.gallery-item .cap{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(14,42,31,.85));display:flex;align-items:flex-end;padding:16px;color:#fff;font-weight:700;opacity:0;transition:opacity .3s}
+.gallery-item:hover .cap{opacity:1}
+.lightbox{position:fixed;inset:0;background:rgba(10,20,15,.92);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox.show{display:flex}
+.lightbox img{max-width:min(920px,94vw);max-height:82vh;border-radius:var(--radius-sm);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lightbox .lb-cap{position:absolute;bottom:26px;inset-inline:0;text-align:center;color:#fff;font-weight:700;font-size:1.1rem}
+.lightbox button{position:absolute;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);width:48px;height:48px;border-radius:50%;font-size:1.4rem;display:flex;align-items:center;justify-content:center;transition:background .25s}
+.lightbox button:hover{background:var(--gold)}
+.lb-close{top:20px;inset-inline-end:20px}
+.lb-prev{top:50%;inset-inline-start:18px;transform:translateY(-50%)}
+.lb-next{top:50%;inset-inline-end:18px;transform:translateY(-50%)}
+
+/* ---------- Reviews ---------- */
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.review-card{background:#fff;border-radius:var(--radius);padding:30px 26px;box-shadow:var(--shadow);position:relative}
+.review-card .quote{font-family:Georgia,serif;font-size:4rem;line-height:.6;color:var(--gold-soft);position:absolute;top:22px;inset-inline-end:24px}
+.stars{display:flex;gap:3px;color:var(--gold);margin-bottom:14px}
+.stars svg{width:19px;height:19px}
+.review-card p{color:var(--charcoal);margin-bottom:20px;font-size:1.02rem}
+.reviewer{display:flex;align-items:center;gap:13px}
+.avatar{width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.15rem;flex:none}
+.reviewer b{display:block}
+.reviewer span{font-size:.86rem;color:var(--muted)}
+.sample-note{display:inline-block;background:#fff8e1;border:1px dashed var(--gold);color:#8a6d1a;border-radius:50px;padding:7px 16px;font-size:.88rem;font-weight:600;margin-top:34px}
+.sample-tag{display:inline-block;background:rgba(35,39,43,.75);color:#fff;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:50px;margin-inline-start:8px;vertical-align:middle}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:34px;align-items:stretch}
+.contact-cards{display:grid;gap:16px}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px 22px;display:flex;gap:16px;align-items:flex-start;transition:box-shadow .3s,transform .3s}
+.contact-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.contact-card .ci{flex:none;width:48px;height:48px;border-radius:50%;background:var(--gold-soft);color:var(--gold);display:flex;align-items:center;justify-content:center}
+.contact-card .ci svg{width:23px;height:23px}
+.contact-card h4{font-size:1.08rem;margin-bottom:2px}
+.contact-card p{color:var(--muted);font-size:.95rem}
+.contact-card a{color:var(--green);font-weight:600}
+.contact-card a:hover{color:var(--gold)}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.map-wrap{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:420px}
+.map-wrap iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--green-dark);color:rgba(255,255,255,.82);padding:70px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:50px}
+.site-footer h4{color:#fff;font-size:1.15rem;margin-bottom:18px}
+.site-footer .logo-name{color:#fff}
+.footer-about p{font-size:.95rem;margin:16px 0 20px}
+.socials{display:flex;gap:10px}
+.socials a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:background .25s,transform .25s}
+.socials a:hover{background:var(--gold);transform:translateY(-3px)}
+.socials svg{width:19px;height:19px;fill:#fff}
+.footer-links li{margin-bottom:11px}
+.footer-links a{transition:color .25s,padding .25s}
+.footer-links a:hover{color:var(--gold-light);padding-inline-start:5px}
+.footer-contact li{display:flex;gap:10px;margin-bottom:13px;font-size:.95rem}
+.footer-contact svg{width:18px;height:18px;flex:none;color:var(--gold-light);margin-top:4px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:20px 0;text-align:center;font-size:.9rem;color:rgba(255,255,255,.6)}
+.footer-bottom b{color:var(--gold-light)}
+.footer-dev{display:block;margin-top:7px;font-size:.85rem;color:rgba(255,255,255,.55)}
+.footer-dev a{color:var(--gold-light);font-weight:700;text-decoration:none}
+.footer-dev a:hover{text-decoration:underline}
+
+/* ---------- Floating WhatsApp / toast / reveal ---------- */
+.wa-float{position:fixed;bottom:24px;inset-inline-end:24px;z-index:90;width:62px;height:62px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(37,211,102,.5);transition:transform .25s}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(37,211,102,.55);animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.85);opacity:1}100%{transform:scale(1.35);opacity:0}}
+.wa-float svg{width:34px;height:34px;fill:#fff}
+.toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,80px);background:var(--green-dark);color:#fff;padding:13px 26px;border-radius:50px;font-weight:600;z-index:300;opacity:0;transition:transform .4s,opacity .4s;box-shadow:var(--shadow-lg);pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{transform:translate(-50%,0);opacity:1}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1200px){
+  .nav-links{gap:18px}
+}
+@media (max-width:1024px){
+  .nav-links{gap:20px}
+  .header-actions .btn{display:none}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .nav-links,.header-actions .btn{display:none}
+  .hamburger{display:flex}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
+  .about-media .img-small{inset-inline-start:0}
+  .offers-grid,.reviews-grid{grid-template-columns:1fr}
+  .section{padding:70px 0}
+}
+@media (max-width:640px){
+  .container{padding-inline:16px}
+  .site-header .header-inner{gap:10px}
+  .logo{gap:8px}
+  .logo-mark{width:42px;height:42px;font-size:1.35rem}
+  .logo-name{font-size:1.1rem}
+  .header-actions{gap:8px}
+  .lang-toggle button{padding:7px 10px;font-size:.82rem}
+  .hamburger{padding:8px}
+  .hero-info{flex-direction:column;margin:-20px 16px 0}
+  .hero-info>div+div{border-inline-start:none;border-top:1px solid var(--line)}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  .gallery-item:nth-child(1){grid-column:span 2;grid-row:span 1}
+  .gallery-item:nth-child(6){grid-column:span 1}
+  .why-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .header-actions .lang-toggle button{padding:7px 11px}
+  .logo-name{font-size:1.15rem}
+  .hero-content{padding-top:130px}
+  .btn{padding:13px 24px}
+}
+/* Very small phones: header shows only the language you can switch TO,
+   keeping the toggle visible without crowding the bar. */
+@media (max-width:480px){
+  .lang-toggle button.active{display:none}
+  .logo-tag{display:none}
+  .logo-mark{display:none}
+  .logo-name{font-size:.98rem}
+}
+@media (max-width:380px){
+  .logo-name{font-size:.9rem}
+  .lang-toggle button{padding:6px 8px}
+  .hamburger{padding:6px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header transparent" id="siteHeader">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#home" class="logo" aria-label="Althawaqa Restaurant">
+        <span class="logo-mark">ذ</span>
+        <span>
+          <span class="logo-name" data-i18n="brand_name">مطعم الذواقة</span>
+          <span class="logo-tag" data-i18n="brand_tag">مذاق أصيل • أجواء راقية</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home" class="active" data-i18n="nav_home">الرئيسية</a>
+        <a href="#about" data-i18n="nav_about">من نحن</a>
+        <a href="#menu" data-i18n="nav_menu">القائمة</a>
+        <a href="#gallery" data-i18n="nav_gallery">المعرض</a>
+        <a href="#contact" data-i18n="nav_contact">تواصل معنا</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" role="group" aria-label="Language / اللغة">
+          <button type="button" data-lang="ar" class="active">العربية</button>
+          <button type="button" data-lang="en">English</button>
+        </div>
+        <a href="#menu" class="btn btn-gold btn-sm" data-i18n="nav_order">اطلب الآن</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#home" data-i18n="nav_home">الرئيسية</a>
+  <a href="#about" data-i18n="nav_about">من نحن</a>
+  <a href="#menu" data-i18n="nav_menu">القائمة</a>
+  <a href="#offers" data-i18n="nav_offers">العروض</a>
+  <a href="#gallery" data-i18n="nav_gallery">المعرض</a>
+  <a href="#reviews" data-i18n="nav_reviews">آراء عملائنا</a>
+  <a href="#contact" data-i18n="nav_contact">تواصل معنا</a>
+  <a href="#menu" class="btn btn-gold" data-i18n="nav_order">اطلب الآن</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80" alt="أطباق مطعم الذواقة الفاخرة" data-alt-ar="أطباق مطعم الذواقة الفاخرة" data-alt-en="Signature dishes at Althawaqa Restaurant" fetchpriority="high"></div>
+  <div class="hero-content">
+    <span class="hero-badge" data-i18n="hero_badge">✦ مطعم عربي أصيل في الرياض</span>
+    <h1><span data-i18n="hero_title_a">اكتشف</span> <span class="gold" data-i18n="hero_title_b">مذاق التميز</span></h1>
+    <p data-i18n="hero_sub">أطباق تقليدية أصيلة، مشاوي على الفحم، وأرز بخاري — تُقدَّم في أجواء راقية تليق بضيوفنا. اطلب الآن ويصلك طلبك ساخناً.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-gold"><span data-i18n="hero_cta_order">اطلب الآن</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#menu" class="btn btn-outline" data-i18n="hero_cta_menu">استكشف القائمة</a>
+    </div>
+  </div>
+</section>
+
+<!-- Hero info strip -->
+<div class="container">
+  <div class="hero-info reveal">
+    <div><div class="ic">◷</div><b data-i18n="info_hours_t">ساعات العمل</b><span data-i18n="info_hours_v">يومياً 12 ظهراً – 11 مساءً</span></div>
+    <div><div class="ic">⌖</div><b data-i18n="info_loc_t">الموقع</b><span data-i18n="info_loc_v">طريق الملك فهد، الرياض</span></div>
+    <div><div class="ic">☎</div><b data-i18n="info_call_t">اتصل بنا</b><span dir="ltr">+92 345 7305226</span></div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <img class="img-main" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1000&q=80" alt="أجواء مطعم الذواقة" data-alt-ar="أجواء مطعم الذواقة" data-alt-en="Inside Althawaqa Restaurant" loading="lazy">
+        <img class="img-small" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="طاولة طعام في المطعم" data-alt-ar="طاولة طعام في المطعم" data-alt-en="Dining table at the restaurant" loading="lazy">
+        <div class="exp-badge"><b>10+</b><span data-i18n="about_exp">سنوات من الخبرة</span></div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow" data-i18n="about_eyebrow">من نحن</span>
+        <h2 data-i18n="about_title">نكهة أصيلة، وضيافة تليق بك</h2>
+        <p data-i18n="about_p1">في مطعم الذواقة، نؤمن أن الطعام الجيد يبدأ من المكونات الطازجة والوصفات المتوارثة. نقدم أطباقنا السعودية والعربية الأصيلة بروح عصرية، مع عناية بكل التفاصيل — من اختيار اللحوم والأرز إلى طريقة التقديم.</p>
+        <p data-i18n="about_p2">سواء كنت تبحث عن غداء عائلي، أو عشاء مع الأصدقاء، أو طلب سريع عبر واتساب — ستجد لدينا تجربة طعام تستحق الزيارة.</p>
+        <ul class="about-points">
+          <li><span class="tick">✓</span><span data-i18n="about_pt1">مكونات طازجة تُختار يومياً من أفضل الموردين المحليين</span></li>
+          <li><span class="tick">✓</span><span data-i18n="about_pt2">وصفات تقليدية أصيلة تُحضَّر بأيدي طهاة خبراء</span></li>
+          <li><span class="tick">✓</span><span data-i18n="about_pt3">أجواء عائلية مريحة وقسم خاص للعائلات</span></li>
+          <li><span class="tick">✓</span><span data-i18n="about_pt4">توصيل سريع وطلب سهل عبر واتساب</span></li>
+        </ul>
+        <a href="#menu" class="btn btn-green" data-i18n="about_cta">تصفح قائمتنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="section alt" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="menu_eyebrow">قائمتنا</span>
+      <h2 data-i18n="menu_title">قائمة الطعام الرقمية</h2>
+      <p data-i18n="menu_sub">اختر فئة لتصفح الأطباق — واضغط «اطلب» ليصلك الطلب عبر واتساب مباشرة.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="filter-bar reveal" id="filterBar" role="tablist" aria-label="Menu categories"></div>
+    <div class="menu-grid" id="menuGrid"></div>
+    <p style="text-align:center;color:var(--muted);font-size:.88rem;margin-top:30px" data-i18n="menu_sample_note">الأطباق والأسعار المعروضة محتوى تجريبي — تُستبدل ببيانات المطعم الفعلية.</p>
+  </div>
+</section>
+
+<!-- ================= OFFERS ================= -->
+<section class="section" id="offers">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="offers_eyebrow">عروض خاصة</span>
+      <h2 data-i18n="offers_title">عروض تستحق التجربة</h2>
+      <p data-i18n="offers_sub">عروض عائلية ووجبات مجمّعة بأسعار مميزة — لفترة محدودة.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="offers-grid" id="offersGrid"></div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="section alt" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="why_eyebrow">لماذا نحن؟</span>
+      <h2 data-i18n="why_title">لماذا يختارنا عملاؤنا؟</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="why-grid" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="gallery_eyebrow">معرض الصور</span>
+      <h2 data-i18n="gallery_title">من أجوائنا وأطباقنا</h2>
+      <p data-i18n="gallery_sub">اضغط على أي صورة لعرضها بالحجم الكامل.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-next" id="lbNext" aria-label="Next">›</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section alt" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="reviews_eyebrow">آراء عملائنا</span>
+      <h2 data-i18n="reviews_title">ماذا يقول ضيوفنا؟</h2>
+      <p data-i18n="reviews_sub">آراء حقيقية من عملاء جرّبوا أطباقنا — شاركنا رأيك بعد زيارتك.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid"></div>
+    <div style="text-align:center"><span class="sample-note" data-i18n="reviews_sample_note">⚠ الآراء المعروضة أمثلة تجريبية — تُستبدل بآراء عملاء حقيقيين.</span></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="contact_eyebrow">تواصل معنا</span>
+      <h2 data-i18n="contact_title">موقعنا ومعلومات التواصل</h2>
+      <p data-i18n="contact_sub">يسعدنا استقبالك في مطعمنا أو استقبال طلبك عبر واتساب.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-cards reveal">
+        <div class="contact-card">
+          <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><h4 data-i18n="contact_phone_t">اتصل بنا</h4><p><a href="tel:+923457305226" dir="ltr">+92 345 7305226</a></p></div>
+        </div>
+        <div class="contact-card">
+          <div class="ci"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+          <div><h4 data-i18n="contact_wa_t">واتساب</h4><p><a href="#" id="waContactLink" target="_blank" rel="noopener" dir="ltr">+92 345 7305226</a></p><p style="font-size:.88rem" data-i18n="contact_wa_s">اطلب أو استفسر مباشرة عبر واتساب</p></div>
+        </div>
+        <div class="contact-card">
+          <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4 data-i18n="contact_addr_t">العنوان</h4><p data-i18n="contact_addr_v">طريق الملك فهد، حي العليا، الرياض، المملكة العربية السعودية</p></div>
+        </div>
+        <div class="contact-card">
+          <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><h4 data-i18n="contact_hours_t">ساعات العمل</h4><p data-i18n="contact_hours_v">السبت – الخميس: 12 ظهراً – 11 مساءً<br>الجمعة: 4 عصراً – 12 منتصف الليل</p></div>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-green btn-sm" href="tel:+923457305226"><span data-i18n="contact_call_btn">اتصل الآن</span></a>
+          <a class="btn btn-light btn-sm" id="waOrderBtn" href="#" target="_blank" rel="noopener"><span data-i18n="contact_wa_btn">اطلب عبر واتساب</span></a>
+          <a class="btn btn-light btn-sm" href="https://www.google.com/maps/dir/?api=1&destination=King+Fahd+Road+Riyadh" target="_blank" rel="noopener"><span data-i18n="contact_dir_btn">الاتجاهات</span></a>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe title="موقع مطعم الذواقة على الخريطة" src="https://www.google.com/maps?q=King+Fahd+Road,+Riyadh,+Saudi+Arabia&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#home" class="logo">
+          <span class="logo-mark">ذ</span>
+          <span><span class="logo-name" data-i18n="brand_name">مطعم الذواقة</span>
+          <span class="logo-tag" data-i18n="brand_tag">مذاق أصيل • أجواء راقية</span></span>
+        </a>
+        <p data-i18n="footer_about">مطعم عربي أصيل في قلب الرياض — أطباق تقليدية ومشاوي وأرز بخاري، تُقدَّم بشغف وضيافة تليق بضيوفنا.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/althawaqa.restaurant" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+          <a href="https://www.facebook.com/althawaqa.restaurant" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://x.com/althawaqa" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.tiktok.com/@althawaqa.restaurant" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer_links_t">روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+          <li><a href="#menu" data-i18n="nav_menu">القائمة</a></li>
+          <li><a href="#gallery" data-i18n="nav_gallery">المعرض</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer_menu_t">من القائمة</h4>
+        <ul class="footer-links" id="footerMenuLinks"></ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer_contact_t">تواصل معنا</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="contact_addr_v">طريق الملك فهد، حي العليا، الرياض، المملكة العربية السعودية</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span dir="ltr">+92 345 7305226</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span data-i18n="contact_hours_v">السبت – الخميس: 12 ظهراً – 11 مساءً<br>الجمعة: 4 عصراً – 12 منتصف الليل</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container"><span data-i18n="footer_copy">© <span id="year">2026</span> مطعم الذواقة — جميع الحقوق محفوظة.</span>
+    <span class="footer-dev"><span data-i18n="footer_dev">تم التطوير بواسطة</span> <a href="https://younasahmad782.github.io/portfolio/" target="_blank" rel="noopener">Muhammad Younus</a></span></div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<div class="toast" id="toast" role="status"></div>
+<script>
+/* ============================================================
+   CONFIG — EDIT EVERYTHING HERE (no other file changes needed)
+   All text, prices, images, phone numbers and links are set
+   in this one object. Replace the SAMPLE values with the real
+   restaurant's details before showing it to a client.
+   ============================================================ */
+const CONFIG = {
+  // Restaurant identity (shown in header + footer)
+  name: { ar: "مطعم الذواقة", en: "Althawaqa Restaurant" },
+  tagline: { ar: "مذاق أصيل • أجواء راقية", en: "Authentic Taste • Elegant Ambience" },
+
+  // ⚠ SAMPLE contact details — replace with the real restaurant's
+  phoneDisplay: "+92 345 7305226",
+  phoneLink: "+923457305226",
+  whatsapp: "923457305226",               // digits only, country code, no +
+  address: {
+    ar: "طريق الملك فهد، حي العليا، الرياض، المملكة العربية السعودية",
+    en: "King Fahd Road, Al Olaya, Riyadh, Saudi Arabia"
+  },
+  hours: {
+    ar: "السبت – الخميس: 12 ظهراً – 11 مساءً<br>الجمعة: 4 عصراً – 12 منتصف الليل",
+    en: "Sat – Thu: 12 PM – 11 PM<br>Fri: 4 PM – 12 AM"
+  },
+  mapQuery: "King Fahd Road, Riyadh, Saudi Arabia",
+
+  currency: { ar: "ر.س", en: "SAR" },
+
+  // Menu categories (id must stay unique; add/remove freely)
+  categories: [
+    { id: "traditional", ar: "أكلات تقليدية", en: "Traditional Food" },
+    { id: "mains",       ar: "الأطباق الرئيسية", en: "Main Courses" },
+    { id: "grilled",     ar: "المشاوي", en: "Grilled Dishes" },
+    { id: "rice",        ar: "أطباق الأرز", en: "Rice Dishes" },
+    { id: "fastfood",    ar: "وجبات سريعة", en: "Fast Food" },
+    { id: "appetizers",  ar: "المقبلات", en: "Appetizers" },
+    { id: "desserts",    ar: "الحلويات", en: "Desserts" },
+    { id: "beverages",   ar: "المشروبات", en: "Beverages" }
+  ],
+
+  // Menu items — prices in SAR. sample:true shows the "Sample" badge.
+  // Replace with the real dishes, prices and photos.
+  menu: [
+    { cat: "traditional", price: 45, popular: true,  sample: true, img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&q=80",
+      name: { ar: "مندي لحم", en: "Meat Mandi" },
+      desc: { ar: "لحم ضأن طري يُطهى على الفحم مع أرز بسمتي متبل وزبيب ومكسرات.", en: "Tender lamb slow-cooked over charcoal with spiced basmati rice, raisins and nuts." } },
+    { cat: "traditional", price: 120, popular: false, sample: true, img: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80",
+      name: { ar: "وليمة الذواقة", en: "Althawaqa Feast" },
+      desc: { ar: "تشكيلة فاخرة من الأطباق التقليدية تكفي 4 أشخاص — مثالية للعائلة.", en: "A generous spread of traditional dishes for 4 people — perfect for the family." } },
+    { cat: "mains", price: 85, popular: true,  sample: true, img: "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80",
+      name: { ar: "ستيك مشوي", en: "Grilled Steak" },
+      desc: { ar: "قطعة ستيك طرية مشوية على الفحم تُقدم مع الخضار وصوص الفلفل.", en: "Tender charcoal-grilled steak served with vegetables and pepper sauce." } },
+    { cat: "mains", price: 75, popular: false, sample: true, img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+      name: { ar: "سلمون مشوي", en: "Grilled Salmon" },
+      desc: { ar: "فيليه سلمون طازج مع الليمون والأعشاب، يُقدم مع الأرز أو الخضار.", en: "Fresh salmon fillet with lemon and herbs, served with rice or vegetables." } },
+    { cat: "grilled", price: 65, popular: true,  sample: true, img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
+      name: { ar: "مشاوي مشكلة", en: "Mixed Grill" },
+      desc: { ar: "تشكيلة مشاوي على الفحم: كباب، شيش طاووق، وريش — مع الخبز والسلطة.", en: "Charcoal mixed grill: kebab, shish tawook and lamb chops, with bread and salad." } },
+    { cat: "grilled", price: 55, popular: false, sample: true, img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
+      name: { ar: "كباب حلبي", en: "Halabi Kebab" },
+      desc: { ar: "كباب حلبي أصيل على الفحم مع صوص الطحينة وخبز الصاج.", en: "Authentic Halabi kebab over charcoal with tahini sauce and saj bread." } },
+    { cat: "rice", price: 35, popular: false, sample: true, img: "https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=800&q=80",
+      name: { ar: "كبسة دجاج", en: "Chicken Kabsa" },
+      desc: { ar: "أرز كبسة متبل مع دجاج مشوي، يُقدم مع السلطة الحارة واللبن.", en: "Spiced kabsa rice with grilled chicken, served with hot salad and yoghurt." } },
+    { cat: "rice", price: 40, popular: false, sample: true, img: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800&q=80",
+      name: { ar: "دجاج مشوي مع الأرز", en: "Roast Chicken with Rice" },
+      desc: { ar: "دجاج مشوي كامل مع أرز بالبهارات والخضار المشوية.", en: "Whole roast chicken with spiced rice and grilled vegetables." } },
+    { cat: "fastfood", price: 28, popular: true,  sample: true, img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
+      name: { ar: "برجر الذواقة", en: "Althawaqa Burger" },
+      desc: { ar: "برجر لحم طازج مع الجبن والبطاطس المقلية وصوصنا الخاص.", en: "Fresh beef burger with cheese, fries and our special sauce." } },
+    { cat: "fastfood", price: 32, popular: false, sample: true, img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
+      name: { ar: "بيتزا مارجريتا", en: "Margherita Pizza" },
+      desc: { ar: "بيتزا بعجينة طرية، صلصة طماطم، وجبنة موزاريلا طازجة.", en: "Soft-dough pizza with tomato sauce and fresh mozzarella." } },
+    { cat: "fastfood", price: 25, popular: false, sample: true, img: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=80",
+      name: { ar: "نودلز آسيوية", en: "Asian Noodles" },
+      desc: { ar: "نودلز بالخضار والدجاج على الطريقة الآسيوية مع صوص الصويا.", en: "Asian-style noodles with vegetables and chicken in soy sauce." } },
+    { cat: "appetizers", price: 22, popular: false, sample: true, img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80",
+      name: { ar: "سلطة مشكلة", en: "Mixed Salad" },
+      desc: { ar: "خضار طازجة مع زيت الزيتون والليمون وحبوب الحمص.", en: "Fresh vegetables with olive oil, lemon and chickpeas." } },
+    { cat: "appetizers", price: 18, popular: false, sample: true, img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+      name: { ar: "شوربة اليوم", en: "Soup of the Day" },
+      desc: { ar: "شوربة طازجة تُحضَّر يومياً — اسأل عن شوربة اليوم.", en: "Fresh soup made daily — ask about today's soup." } },
+    { cat: "desserts", price: 25, popular: true,  sample: true, img: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800&q=80",
+      name: { ar: "حلوى الشوكولاتة", en: "Chocolate Dessert" },
+      desc: { ar: "طبقات الشوكولاتة الغنية مع الكريمة — ختام مثالي لوجبتك.", en: "Rich chocolate layers with cream — the perfect end to your meal." } },
+    { cat: "desserts", price: 28, popular: false, sample: true, img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&q=80",
+      name: { ar: "كيكة الفراولة", en: "Strawberry Cake" },
+      desc: { ar: "كيكة طرية مع الفراولة الطازجة وكريمة الفانيليا.", en: "Soft cake with fresh strawberries and vanilla cream." } },
+    { cat: "desserts", price: 22, popular: false, sample: true, img: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
+      name: { ar: "بانا كوتا", en: "Panna Cotta" },
+      desc: { ar: "بانا كوتا ناعمة مع صوص التوت الطازج.", en: "Silky panna cotta with fresh berry sauce." } },
+    { cat: "beverages", price: 15, popular: false, sample: true, img: "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800&q=80",
+      name: { ar: "عصير طازج", en: "Fresh Juice" },
+      desc: { ar: "عصير برتقال طازج يُعصر عند الطلب.", en: "Freshly squeezed orange juice, made to order." } },
+    { cat: "beverages", price: 18, popular: false, sample: true, img: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=800&q=80",
+      name: { ar: "موكتيل الفواكه", en: "Fruit Mocktail" },
+      desc: { ar: "مزيج فواكه منعش بدون كحول مع الثلج المجروش.", en: "Refreshing alcohol-free fruit mix with crushed ice." } },
+    { cat: "beverages", price: 12, popular: false, sample: true, img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+      name: { ar: "قهوة عربية", en: "Arabic Coffee" },
+      desc: { ar: "قهوة عربية أصيلة مع الهيل، تُقدم مع التمر.", en: "Authentic Arabic coffee with cardamom, served with dates." } }
+  ],
+
+  // Special offers — sample prices; replace with real promotions.
+  offers: [
+    { tag: { ar: "وفّر 25%", en: "Save 25%" }, price: 99, was: 132, featured: true, sample: true,
+      img: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=900&q=80",
+      title: { ar: "عرض العائلة", en: "Family Deal" },
+      desc: { ar: "وليمة تقليدية كاملة تكفي 4 أشخاص مع المشروبات — بسعر العرض لفترة محدودة.", en: "A full traditional feast for 4 people including drinks — limited-time price." } },
+    { tag: { ar: "الأكثر طلباً", en: "Most Ordered" }, price: 65, was: 80, featured: false, sample: true,
+      img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900&q=80",
+      title: { ar: "وجبة المشاوي المميزة", en: "Signature Grill Meal" },
+      desc: { ar: "مشاوي مشكلة + أرز + سلطة + مشروب — وجبة متكاملة بسعر مميز.", en: "Mixed grill + rice + salad + drink — a complete meal at a special price." } },
+    { tag: { ar: "جديد", en: "New" }, price: 35, was: 45, featured: false, sample: true,
+      img: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=900&q=80",
+      title: { ar: "كومبو البرجر", en: "Burger Combo" },
+      desc: { ar: "برجر + بطاطس + مشروب — وجبة سريعة لذيذة بسعر لا يُقاوم.", en: "Burger + fries + drink — a tasty quick meal at an unbeatable price." } }
+  ],
+
+  // Why choose us — icons: leaf | star | bell | home
+  why: [
+    { icon: "leaf",
+      title: { ar: "مكونات طازجة", en: "Fresh Ingredients" },
+      desc: { ar: "نختار مكوناتنا يومياً من أفضل الموردين المحليين.", en: "We source our ingredients daily from the best local suppliers." } },
+    { icon: "star",
+      title: { ar: "مذاق ممتاز", en: "Excellent Taste" },
+      desc: { ar: "وصفات أصيلة وطهاة خبراء يحرصون على كل طبق.", en: "Authentic recipes and expert chefs who care about every dish." } },
+    { icon: "bell",
+      title: { ar: "خدمة مميزة", en: "Quality Service" },
+      desc: { ar: "فريق ودود يهتم براحتك من لحظة وصولك حتى مغادرتك.", en: "A friendly team that looks after you from arrival to departure." } },
+    { icon: "home",
+      title: { ar: "أجواء مريحة", en: "Comfortable Dining" },
+      desc: { ar: "تصميم دافئ وقسم عائلي خاص يناسب الجميع.", en: "A warm design with a private family section for everyone." } }
+  ],
+
+  // Gallery — captions in both languages
+  gallery: [
+    { img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80", cap: { ar: "قاعة الطعام الرئيسية", en: "Main dining hall" } },
+    { img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80", cap: { ar: "أجواء المطعم", en: "Restaurant ambience" } },
+    { img: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=900&q=80", cap: { ar: "طاولة الضيافة", en: "Guest table setting" } },
+    { img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80", cap: { ar: "تجربة طعام راقية", en: "Fine dining experience" } },
+    { img: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=900&q=80", cap: { ar: "أطباقنا المميزة", en: "Our signature dishes" } },
+    { img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80", cap: { ar: "من مطبخنا", en: "From our kitchen" } },
+    { img: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=900&q=80", cap: { ar: "طهاتنا أثناء العمل", en: "Our chefs at work" } },
+    { img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&q=80", cap: { ar: "مائدة العائلة", en: "Family table" } }
+  ],
+
+  // ⚠ SAMPLE reviews — clearly labelled as samples on the page.
+  // Replace with real customer reviews (name + text + stars).
+  reviews: [
+    { stars: 5, sample: true,
+      name: { ar: "أحمد م.", en: "Ahmed M." }, meta: { ar: "عميل دائم", en: "Regular customer" },
+      text: { ar: "أفضل مندي جربته في الرياض — اللحم طري والأرز ممتاز. الخدمة سريعة والأسعار مناسبة.", en: "The best mandi I have tried in Riyadh — tender meat, excellent rice. Fast service and fair prices." } },
+    { stars: 5, sample: true,
+      name: { ar: "سارة ع.", en: "Sara A." }, meta: { ar: "زائرة من جدة", en: "Visitor from Jeddah" },
+      text: { ar: "أجواء راقية وهادئة، والمشاوي المشكلة لذيذة جداً. أنصح به للعائلات.", en: "Elegant, calm atmosphere and the mixed grill is delicious. I recommend it for families." } },
+    { stars: 4, sample: true,
+      name: { ar: "خالد س.", en: "Khaled S." }, meta: { ar: "طلب عبر واتساب", en: "Ordered on WhatsApp" },
+      text: { ar: "طلبت عبر واتساب ووصل الطلب ساخناً وفي الوقت المحدد. تجربة مريحة وسأعيد الطلب.", en: "I ordered on WhatsApp and the food arrived hot and on time. A smooth experience — I will order again." } }
+  ]
+};
+
+/* ============================================================
+   TRANSLATIONS — every static string on the page, AR + EN
+   ============================================================ */
+const I18N = {
+  ar: {
+    brand_name: "مطعم الذواقة", brand_tag: "مذاق أصيل • أجواء راقية",
+    nav_home: "الرئيسية", nav_about: "من نحن", nav_menu: "القائمة", nav_gallery: "المعرض",
+    nav_contact: "تواصل معنا", nav_offers: "العروض", nav_reviews: "آراء عملائنا", nav_order: "اطلب الآن",
+    hero_badge: "✦ مطعم عربي أصيل في الرياض",
+    hero_title_a: "اكتشف", hero_title_b: "مذاق التميز",
+    hero_sub: "أطباق تقليدية أصيلة، مشاوي على الفحم، وأرز بخاري — تُقدَّم في أجواء راقية تليق بضيوفنا. اطلب الآن ويصلك طلبك ساخناً.",
+    hero_cta_order: "اطلب الآن", hero_cta_menu: "استكشف القائمة",
+    info_hours_t: "ساعات العمل", info_hours_v: "يومياً 12 ظهراً – 11 مساءً",
+    info_loc_t: "الموقع", info_loc_v: "طريق الملك فهد، الرياض",
+    info_call_t: "اتصل بنا",
+    about_exp: "سنوات من الخبرة", about_eyebrow: "من نحن",
+    about_title: "نكهة أصيلة، وضيافة تليق بك",
+    about_p1: "في مطعم الذواقة، نؤمن أن الطعام الجيد يبدأ من المكونات الطازجة والوصفات المتوارثة. نقدم أطباقنا السعودية والعربية الأصيلة بروح عصرية، مع عناية بكل التفاصيل — من اختيار اللحوم والأرز إلى طريقة التقديم.",
+    about_p2: "سواء كنت تبحث عن غداء عائلي، أو عشاء مع الأصدقاء، أو طلب سريع عبر واتساب — ستجد لدينا تجربة طعام تستحق الزيارة.",
+    about_pt1: "مكونات طازجة تُختار يومياً من أفضل الموردين المحليين",
+    about_pt2: "وصفات تقليدية أصيلة تُحضَّر بأيدي طهاة خبراء",
+    about_pt3: "أجواء عائلية مريحة وقسم خاص للعائلات",
+    about_pt4: "توصيل سريع وطلب سهل عبر واتساب",
+    about_cta: "تصفح قائمتنا",
+    menu_eyebrow: "قائمتنا", menu_title: "قائمة الطعام الرقمية",
+    menu_sub: "اختر فئة لتصفح الأطباق — واضغط «اطلب» ليصلك الطلب عبر واتساب مباشرة.",
+    menu_sample_note: "الأطباق والأسعار المعروضة محتوى تجريبي — تُستبدل ببيانات المطعم الفعلية.",
+    offers_eyebrow: "عروض خاصة", offers_title: "عروض تستحق التجربة",
+    offers_sub: "عروض عائلية ووجبات مجمّعة بأسعار مميزة — لفترة محدودة.",
+    why_eyebrow: "لماذا نحن؟", why_title: "لماذا يختارنا عملاؤنا؟",
+    gallery_eyebrow: "معرض الصور", gallery_title: "من أجوائنا وأطباقنا",
+    gallery_sub: "اضغط على أي صورة لعرضها بالحجم الكامل.",
+    reviews_eyebrow: "آراء عملائنا", reviews_title: "ماذا يقول ضيوفنا؟",
+    reviews_sub: "آراء حقيقية من عملاء جرّبوا أطباقنا — شاركنا رأيك بعد زيارتك.",
+    reviews_sample_note: "⚠ الآراء المعروضة أمثلة تجريبية — تُستبدل بآراء عملاء حقيقيين.",
+    contact_eyebrow: "تواصل معنا", contact_title: "موقعنا ومعلومات التواصل",
+    contact_sub: "يسعدنا استقبالك في مطعمنا أو استقبال طلبك عبر واتساب.",
+    contact_phone_t: "اتصل بنا", contact_wa_t: "واتساب",
+    contact_wa_s: "اطلب أو استفسر مباشرة عبر واتساب",
+    contact_addr_t: "العنوان", contact_addr_v: "طريق الملك فهد، حي العليا، الرياض، المملكة العربية السعودية",
+    contact_hours_t: "ساعات العمل", contact_hours_v: "السبت – الخميس: 12 ظهراً – 11 مساءً<br>الجمعة: 4 عصراً – 12 منتصف الليل",
+    contact_call_btn: "اتصل الآن", contact_wa_btn: "اطلب عبر واتساب", contact_dir_btn: "الاتجاهات",
+    footer_about: "مطعم عربي أصيل في قلب الرياض — أطباق تقليدية ومشاوي وأرز بخاري، تُقدَّم بشغف وضيافة تليق بضيوفنا.",
+    footer_links_t: "روابط سريعة", footer_menu_t: "من القائمة", footer_contact_t: "تواصل معنا",
+    footer_copy: "© {year} مطعم الذواقة — جميع الحقوق محفوظة.",
+    footer_dev: "تم التطوير بواسطة",
+    order_btn: "اطلب", popular_badge: "الأكثر مبيعاً", sample_badge: "عينة", all_cat: "الكل",
+    toast_ar: "تم التبديل إلى العربية", toast_en: "Switched to English",
+    wa_order_msg: "مرحباً، أريد طلب: {name} — {price} ر.س",
+    wa_general_msg: "مرحباً، أريد الاستفسار عن قائمة الطعام في مطعم الذواقة."
+  },
+  en: {
+    brand_name: "Althawaqa Restaurant", brand_tag: "Authentic Taste • Elegant Ambience",
+    nav_home: "Home", nav_about: "About Us", nav_menu: "Menu", nav_gallery: "Gallery",
+    nav_contact: "Contact Us", nav_offers: "Offers", nav_reviews: "Reviews", nav_order: "Order Now",
+    hero_badge: "✦ Authentic Arabic restaurant in Riyadh",
+    hero_title_a: "Discover the", hero_title_b: "Taste of Excellence",
+    hero_sub: "Authentic traditional dishes, charcoal grills and bukhari rice — served in an elegant atmosphere worthy of our guests. Order now and your food arrives hot.",
+    hero_cta_order: "Order Now", hero_cta_menu: "Explore Menu",
+    info_hours_t: "Opening Hours", info_hours_v: "Daily 12 PM – 11 PM",
+    info_loc_t: "Location", info_loc_v: "King Fahd Road, Riyadh",
+    info_call_t: "Call Us",
+    about_exp: "Years of Experience", about_eyebrow: "About Us",
+    about_title: "Authentic flavour, hospitality that honours you",
+    about_p1: "At Althawaqa, we believe great food starts with fresh ingredients and recipes passed down through generations. We serve authentic Saudi and Arabic dishes with a modern touch, caring about every detail — from choosing the meat and rice to the way it is presented.",
+    about_p2: "Whether you are looking for a family lunch, dinner with friends, or a quick order on WhatsApp — you will find a dining experience worth visiting.",
+    about_pt1: "Fresh ingredients chosen daily from the best local suppliers",
+    about_pt2: "Authentic traditional recipes prepared by expert chefs",
+    about_pt3: "Comfortable family atmosphere with a private family section",
+    about_pt4: "Fast delivery and easy ordering on WhatsApp",
+    about_cta: "Browse Our Menu",
+    menu_eyebrow: "Our Menu", menu_title: "Digital Food Menu",
+    menu_sub: "Choose a category to browse the dishes — tap “Order” and your order reaches us on WhatsApp instantly.",
+    menu_sample_note: "Dishes and prices shown are sample content — replace with the restaurant's real data.",
+    offers_eyebrow: "Special Offers", offers_title: "Offers Worth Trying",
+    offers_sub: "Family deals and combo meals at special prices — for a limited time.",
+    why_eyebrow: "Why Us?", why_title: "Why Our Customers Choose Us",
+    gallery_eyebrow: "Gallery", gallery_title: "From Our Ambience & Dishes",
+    gallery_sub: "Tap any photo to view it full size.",
+    reviews_eyebrow: "Customer Reviews", reviews_title: "What Our Guests Say",
+    reviews_sub: "Real opinions from customers who tried our dishes — share yours after your visit.",
+    reviews_sample_note: "⚠ Reviews shown are sample examples — replace with real customer reviews.",
+    contact_eyebrow: "Contact Us", contact_title: "Our Location & Contact",
+    contact_sub: "We would love to welcome you at our restaurant or take your order on WhatsApp.",
+    contact_phone_t: "Call Us", contact_wa_t: "WhatsApp",
+    contact_wa_s: "Order or ask us directly on WhatsApp",
+    contact_addr_t: "Address", contact_addr_v: "King Fahd Road, Al Olaya, Riyadh, Saudi Arabia",
+    contact_hours_t: "Opening Hours", contact_hours_v: "Sat – Thu: 12 PM – 11 PM<br>Fri: 4 PM – 12 AM",
+    contact_call_btn: "Call Now", contact_wa_btn: "Order on WhatsApp", contact_dir_btn: "Get Directions",
+    footer_about: "An authentic Arabic restaurant in the heart of Riyadh — traditional dishes, grills and bukhari rice, served with passion and hospitality worthy of our guests.",
+    footer_links_t: "Quick Links", footer_menu_t: "From the Menu", footer_contact_t: "Contact Us",
+    footer_copy: "© {year} Althawaqa Restaurant — All rights reserved.",
+    footer_dev: "Developed by",
+    order_btn: "Order", popular_badge: "Bestseller", sample_badge: "Sample", all_cat: "All",
+    toast_ar: "تم التبديل إلى العربية", toast_en: "Switched to English",
+    wa_order_msg: "Hello, I would like to order: {name} — {price} SAR",
+    wa_general_msg: "Hello, I would like to ask about the menu at Althawaqa Restaurant."
+  }
+};
+
+/* ============================================================
+   APP LOGIC
+   ============================================================ */
+const $ = (s, c = document) => c.querySelector(s);
+const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+const t = k => I18N[state.lang][k] || k;
+const L = obj => obj[state.lang] || obj.en;
+const state = { lang: localStorage.getItem("althawaqa-lang") || "ar", filter: "all", lbIndex: 0 };
+
+const ICONS = {
+  leaf: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>',
+  star: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
+  bell: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>',
+  home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>'
+};
+const starSVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+const waLink = msg => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+
+/* ---------- Static text ---------- */
+function applyLang() {
+  const year = new Date().getFullYear();
+  $$("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (I18N[state.lang][key] !== undefined) el.innerHTML = I18N[state.lang][key].replace("{year}", year);
+  });
+  $$("[data-alt-ar]").forEach(img => { img.alt = state.lang === "ar" ? img.dataset.altAr : img.dataset.altEn; });
+  document.title = state.lang === "ar"
+    ? "مطعم الذواقة | اكتشف مذاق التميز — Althawaqa Restaurant"
+    : "Althawaqa Restaurant | Discover the Taste of Excellence — مطعم الذواقة";
+}
+
+/* ---------- Render: filters + menu ---------- */
+function renderFilters() {
+  const bar = $("#filterBar");
+  const all = [{ id: "all", ar: t("all_cat"), en: t("all_cat") }, ...CONFIG.categories];
+  bar.innerHTML = all.map(c =>
+    `<button class="filter-btn ${state.filter === c.id ? "active" : ""}" data-cat="${c.id}" role="tab" aria-selected="${state.filter === c.id}">${L(c)}</button>`
+  ).join("");
+  $$(".filter-btn", bar).forEach(b => b.addEventListener("click", () => {
+    state.filter = b.dataset.cat;
+    renderFilters(); renderMenu();
+  }));
+}
+function renderMenu() {
+  const items = CONFIG.menu.filter(m => state.filter === "all" || m.cat === state.filter);
+  $("#menuGrid").innerHTML = items.map((m, i) => {
+    const msg = t("wa_order_msg").replace("{name}", L(m.name)).replace("{price}", m.price);
+    return `<article class="menu-card" style="animation-delay:${i * 55}ms">
+      <div class="menu-img">
+        <img src="${m.img}" alt="${L(m.name)}" loading="lazy">
+        ${m.popular ? `<span class="badge badge-popular">${t("popular_badge")}</span>` : ""}
+        ${m.sample ? `<span class="badge badge-sample">${t("sample_badge")}</span>` : ""}
+      </div>
+      <div class="menu-body">
+        <h3>${L(m.name)}</h3>
+        <p>${L(m.desc)}</p>
+        <div class="menu-foot">
+          <span class="price">${m.price} <small>${L(CONFIG.currency)}</small></span>
+          <a class="btn btn-gold btn-sm" href="${waLink(msg)}" target="_blank" rel="noopener">${t("order_btn")}</a>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+/* ---------- Render: offers / why / gallery / reviews / footer links ---------- */
+function renderOffers() {
+  $("#offersGrid").innerHTML = CONFIG.offers.map(o => {
+    const msg = t("wa_order_msg").replace("{name}", L(o.title)).replace("{price}", o.price);
+    return `<article class="offer-card ${o.featured ? "featured" : ""}">
+      <div class="offer-img"><img src="${o.img}" alt="${L(o.title)}" loading="lazy">
+        <span class="offer-tag">${L(o.tag)}</span>
+        ${o.sample ? `<span class="badge badge-sample">${t("sample_badge")}</span>` : ""}
+      </div>
+      <div class="offer-body">
+        <h3>${L(o.title)}</h3><p>${L(o.desc)}</p>
+        <div class="offer-price"><span class="now">${o.price} ${L(CONFIG.currency)}</span><span class="was">${o.was} ${L(CONFIG.currency)}</span></div>
+        <a class="btn btn-green btn-sm" href="${waLink(msg)}" target="_blank" rel="noopener">${t("order_btn")}</a>
+      </div>
+    </article>`;
+  }).join("");
+}
+function renderWhy() {
+  $("#whyGrid").innerHTML = CONFIG.why.map(w => `
+    <div class="why-card"><div class="why-icon">${ICONS[w.icon] || ""}</div>
+    <h3>${L(w.title)}</h3><p>${L(w.desc)}</p></div>`).join("");
+}
+function renderGallery() {
+  $("#galleryGrid").innerHTML = CONFIG.gallery.map((g, i) => `
+    <figure class="gallery-item" data-index="${i}" tabindex="0" role="button" aria-label="${L(g.cap)}">
+      <img src="${g.img}" alt="${L(g.cap)}" loading="lazy">
+      <figcaption class="cap">${L(g.cap)}</figcaption>
+    </figure>`).join("");
+  $$(".gallery-item").forEach(el => {
+    el.addEventListener("click", () => openLightbox(+el.dataset.index));
+    el.addEventListener("keydown", e => { if (e.key === "Enter") openLightbox(+el.dataset.index); });
+  });
+}
+function renderReviews() {
+  $("#reviewsGrid").innerHTML = CONFIG.reviews.map(r => `
+    <article class="review-card">
+      <div class="quote">”</div>
+      <div class="stars">${starSVG.repeat(r.stars)}${'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'.repeat(5 - r.stars)}</div>
+      <p>“${L(r.text)}”</p>
+      <div class="reviewer">
+        <span class="avatar">${L(r.name).trim().charAt(0)}</span>
+        <div><b>${L(r.name)}${r.sample ? `<span class="sample-tag">${t("sample_badge")}</span>` : ""}</b><span>${L(r.meta)}</span></div>
+      </div>
+    </article>`).join("");
+}
+function renderFooterMenuLinks() {
+  $("#footerMenuLinks").innerHTML = CONFIG.categories.slice(0, 5).map(c =>
+    `<li><a href="#menu" data-cat-link="${c.id}">${L(c)}</a></li>`).join("");
+  $$("[data-cat-link]").forEach(a => a.addEventListener("click", () => {
+    state.filter = a.dataset.catLink; renderFilters(); renderMenu();
+  }));
+}
+
+/* ---------- Lightbox ---------- */
+function openLightbox(i) {
+  state.lbIndex = i; updateLightbox();
+  $("#lightbox").classList.add("show");
+  document.body.style.overflow = "hidden";
+}
+function updateLightbox() {
+  const g = CONFIG.gallery[state.lbIndex];
+  const img = $("#lbImg");
+  img.src = g.img.replace("w=900", "w=1400");
+  img.alt = L(g.cap);
+  $("#lbCap").textContent = L(g.cap);
+}
+function closeLightbox() {
+  $("#lightbox").classList.remove("show");
+  document.body.style.overflow = "";
+}
+$("#lbClose").addEventListener("click", closeLightbox);
+$("#lbPrev").addEventListener("click", () => { state.lbIndex = (state.lbIndex - 1 + CONFIG.gallery.length) % CONFIG.gallery.length; updateLightbox(); });
+$("#lbNext").addEventListener("click", () => { state.lbIndex = (state.lbIndex + 1) % CONFIG.gallery.length; updateLightbox(); });
+$("#lightbox").addEventListener("click", e => { if (e.target.id === "lightbox") closeLightbox(); });
+document.addEventListener("keydown", e => {
+  if (!$("#lightbox").classList.contains("show")) return;
+  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowLeft") $("#lbPrev").click();
+  if (e.key === "ArrowRight") $("#lbNext").click();
+});
+
+/* ---------- Language toggle ---------- */
+function setLang(lang, silent) {
+  state.lang = lang;
+  localStorage.setItem("althawaqa-lang", lang);
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  $$(".lang-toggle button").forEach(b => b.classList.toggle("active", b.dataset.lang === lang));
+  applyLang(); renderFilters(); renderMenu(); renderOffers(); renderWhy(); renderGallery(); renderReviews(); renderFooterMenuLinks();
+  updateWaLinks();
+  if (!silent) showToast(lang === "ar" ? t("toast_ar") : t("toast_en"));
+}
+$$(".lang-toggle button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+
+/* ---------- WhatsApp links ---------- */
+function updateWaLinks() {
+  const general = waLink(t("wa_general_msg"));
+  $("#waFloat").href = general;
+  $("#waContactLink").href = general;
+  $("#waOrderBtn").href = general;
+}
+
+/* ---------- Toast ---------- */
+let toastTimer;
+function showToast(msg) {
+  const el = $("#toast");
+  el.textContent = msg; el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove("show"), 2600);
+}
+
+/* ---------- Header / mobile nav / reveal / active link ---------- */
+const header = $("#siteHeader");
+function onScroll() {
+  if (window.scrollY > 40) { header.classList.remove("transparent"); header.classList.add("scrolled"); }
+  else { header.classList.add("transparent"); header.classList.remove("scrolled"); }
+}
+window.addEventListener("scroll", onScroll, { passive: true });
+onScroll();
+
+const hamburger = $("#hamburger"), mobileNav = $("#mobileNav"), overlay = $("#navOverlay");
+function closeMobileNav() {
+  mobileNav.classList.remove("open"); overlay.classList.remove("show");
+  hamburger.classList.remove("open"); hamburger.setAttribute("aria-expanded", "false");
+}
+hamburger.addEventListener("click", () => {
+  const open = mobileNav.classList.toggle("open");
+  overlay.classList.toggle("show", open);
+  hamburger.classList.toggle("open", open);
+  hamburger.setAttribute("aria-expanded", String(open));
+});
+overlay.addEventListener("click", closeMobileNav);
+$$("#mobileNav a").forEach(a => a.addEventListener("click", closeMobileNav));
+
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); revealObs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+$$(".reveal").forEach(el => revealObs.observe(el));
+
+const sections = ["home", "about", "menu", "gallery", "contact"];
+const navObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      $$(".nav-links a").forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
+    }
+  });
+}, { rootMargin: "-40% 0px -55% 0px" });
+sections.forEach(id => { const el = document.getElementById(id); if (el) navObs.observe(el); });
+
+/* ---------- Init ---------- */
+setLang(state.lang, true);
+</script>
+</body>
+</html>
